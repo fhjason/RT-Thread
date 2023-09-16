@@ -10,7 +10,7 @@ CROSS_TOOL= os.getenv('RTT_CC') or 'gcc'
 
 if  CROSS_TOOL == 'gcc':
     PLATFORM    = 'gcc'
-    EXEC_PATH   = os.getenv('RTT_EXEC_PATH') or 'E:/Program Files/CodeSourcery/Sourcery_CodeBench_Lite_for_IA32_ELF/bin'
+    EXEC_PATH   = os.getenv('RTT_EXEC_PATH') or '/home/fanghongjie/install/i386-unknown-elf_for_x86_64-pc-linux-gnu/bin'
 else:
     print('Unknown toolchains, only support GCC')
     exit(0)
